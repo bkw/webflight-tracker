@@ -39,7 +39,7 @@ module.exports = config;
 Video Demo
 ----------
 
-I recorded a [short demonstration video](http://youtu.be/-xvXSijOasA)
+I recorded a [short demonstration video](http://youtu.be/S2UVnwKzhEk)
 
 License
 -------
