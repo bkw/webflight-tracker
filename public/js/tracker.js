@@ -125,9 +125,7 @@
 
         // translate from (stretched) canvas to framebuffer dimensions:
         this.newXY[0] = x * this.frameWidth / this.canvas.clientWidth;
-        this.oldXY[0] = this.newXY[0];
         this.newXY[1] = y * this.frameHeight / this.canvas.clientHeight;
-        this.oldXY[1] = this.newXY[1];
         // console.log('New tracking coords:', [x,y], this.newXY);
         this.enable();
     };
@@ -173,8 +171,6 @@
 
     Tracker.prototype.disable = function () {
         this.enabled = false;
-        this.oldXY[0] = 0;
-        this.oldXY[1] = 0;
     };
 
     Tracker.prototype.on = function (event, callback) {
