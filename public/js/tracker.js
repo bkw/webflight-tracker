@@ -168,11 +168,7 @@
         this.prepareTrackingBuffer();
 
         this.hookNextFrame();
-        // this.on('done', this.hookNextFrame.bind(this));
-        this.on('done', function () {
-            tracker.hookNextFrame();
-        });
-
+        this.on('done', this.hookNextFrame.bind(this));
     };
 
     Tracker.prototype.disable = function () {
@@ -199,12 +195,7 @@
     };
 
     Tracker.prototype.hookNextFrame = function () {
-        var tracker = this;
-        // this.cockpit.videostream.onNextFrame(this.update.bind(this));
-
-        this.cockpit.videostream.onNextFrame(function (frameBuffer) {
-            tracker.update(frameBuffer);
-        });
+        this.cockpit.videostream.onNextFrame(this.update.bind(this));
 
     };
 
