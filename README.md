@@ -16,12 +16,12 @@ Installation
 
 - Launch webflight
 
-- Klick on the video screen
+- Click on the video screen
 
 Dependencies
 ------------
 
-This plugins needs the video-stream to supply the image data. It has to be
+This plugin needs the video-stream to supply the image data. It has to be
 loaded after it.
 
 Example config.js:
@@ -30,7 +30,7 @@ Example config.js:
 ```javascript
 
 var config = {
-    plugins: [ "video-stream", "hud", "batter", "pilot", "tracker" ],
+    plugins: [ "video-stream", "hud", "battery", "pilot", "tracker" ],
     keyboard: 'qwerty'
 };
 module.exports = config;
